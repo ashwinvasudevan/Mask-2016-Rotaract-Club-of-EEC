@@ -1,14 +1,100 @@
 /* GENERAL */
-* {
-	margin: 0px;
-	padding: 0px;
-}
 
 html,body {
 	width: 100%;
 	height: 100%;
 }
 
+h1 {
+	font-size:55px;
+}
+
+h2 {
+	font-size:40px;
+}
+
+h3 {
+	font-size:25px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:300;
+	font-family:'Open Sans Condensed',sans-serif;
+	line-height: 44px;
+	margin: 0px;
+}
+
+hr {
+	width:10%;
+	margin-top:10px;
+	border-top:3px solid #00d089;
+}
+
+section {
+	padding: 30px 0px;
+}
+
+body {
+	color : #fff;
+	font-family:'Cabin',sans-serif;
+}
+
+p {
+
+	line-height:30px;
+}
+
+.primary-color {
+	color: #fff;
+	background-color: #00d089;
+}
+
+.secondary-color {
+	color: #fff;
+	background-color: #171717;
+}
+
+.heavy {
+	font-weight: 700;
+}
+
+.italics {
+	font-style:italic;
+}
+
+.btn {
+	color: #fff;
+	border-radius: 0px;
+	padding: 8px 40px;
+	font-weight: 700;
+	font-family:'Open Sans Condensed',sans-serif;
+}
+
+.btn-primary {
+	border: 0px;
+	background-color: #00d089;
+}
+
+.btn-secondary {
+	border: 1px solid #fff;
+	background-color: transparent;
+}
+
+.btn-primary:focus,.btn-primary:hover {
+	background-color: #00ae73;
+}
+
+.btn-secondary:focus,.btn-secondary:hover {
+	background-color: #fff;
+	color: #00d089;
+}
+
+.spacing {
+	margin: 20px 0px;
+}
+
+
+/*Nav Section*/
 .navbar-fixed-top {
 	top: 50px;
 	width: 75%;
@@ -20,8 +106,12 @@ html,body {
 .navbar-nav {
 	text-align: center;
 	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
 	justify-content: space-between;
-	width: 92%;
+	width: 91%;
 }
 
 /*Overiding Boostrap Default Brand*/
@@ -47,9 +137,179 @@ html,body {
 	background-color: transparent;
 }
 
+/*Carousel Section*/
+.carousel,.item,.active,.carousel-inner {
+	height: 100%;
+}
+
+.fill {
+	height: 100%;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+/*Logos*/
+
+#main-logos {
+	position: absolute;
+	top: 23%;
+	z-index: 2;
+	width: 309px;
+	margin: 0 auto;
+	left:0;
+	right:0;
+}
+#main-logos img {
+	display:inline-block;
+	width:100px;
+	height:100px;
+}
+
+/* BOOTSTRAP ARROW BG OVERRIDE */ 
+.carousel-control.left,.carousel-control.right {
+	background-image:none;
+}
+
+.carousel-control {
+	position:absolute;
+	top:57%;
+	z-index:5;
+	display:inline-block;
+}
+
+.carousel-control i {
+	padding: 8px;
+	color: rgba(0,0,0,0.75);
+	z-index: 5;
+	background-color: #fff;
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+}
+
+.carousel-caption {
+	top: 45%;
+	padding: 0px;
+}
+
+.carousel-caption img {
+	width: 105px;
+	height: 140px;
+	margin-bottom: 10px;
+	
+}
+
+.carousel-caption h1,.carousel-caption h3 {
+	text-align: center;
+	
+}
+
+.incremental-counter {
+	display: inline;
+}
+
+.incremental-counter .num {
+	background-color: #00d089;
+	border-radius: 100px;
+	display: inline-block;
+	background-position: center;
+	position: relative;
+	text-align: center;
+	top: -10px;
+	width: 45px;
+	height: 45px;
+	font-size: 30px;
+	font-weight: 700;
+	margin-right: 10px;
+}
+
+/*Subscribe Section*/
+
+#subscribe {
+	padding: 20px 0px;
+}
+#subscribe .form-group .form-control {
+	margin-top: 20px;
+	border-radius: 0px;
+	font-family:'Open Sans Condensed',sans-serif;
+	height: 40px;
+}
+
+#subscribe button {
+	margin-top: 20px;
+}
+
+/*The mission*/
+
+#mission h2 {
+	margin: 50px 0px 10px 0px;
+	color: #adadad;
+}
+
+/*Info section*/
+
+.row-eq-height {
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+}
+
+article img {
+	border-radius: 10px;
+  border: 3px solid #BADA55;
+
+}
+
+.bg{
+	background: url(../images/bg-dark.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+
+#info-details {
+    width: 225px;
+    margin:20px auto;
+}
+
+article img {
+	padding: 30px 0px;
+}
+
+article #info-text {
+	margin-top: 40px;
+}
+
+
+
+
+
+
 
 /*Mobile CSS*/
 @media only screen and (max-width:768px) {
+
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	h3 {
+		font-size: 17px;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		line-height: 25px;
+	}
 
 	.container-fluid>.navbar-header,.navbar-nav {
 		margin: 0px;
@@ -58,6 +318,28 @@ html,body {
 	.navbar-nav {
 		display: block;
 		width: 100%;
+	}
+
+	.carousel-control i {
+		padding: 8px;
+		font-size: 	13px;
+	}
+
+	.carousel-caption img {
+			width: 55px;
+			height: 80px;
+			border: none;
+	}
+
+	.incremental-counter .num {
+			top: -5px;
+			width: 25px;
+			height: 25px;
+			font-size: 14px;
+	}
+
+	.row-eq-height {
+		display: block;
 	}
 	
 }

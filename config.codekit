@@ -2,6 +2,15 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19076",
 "files": {
+	"\/backup.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/backup.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/backup.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -67,6 +76,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/bg-dark.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 579594,
+		"inputAbbreviatedPath": "\/images\/bg-dark.jpg",
+		"outputAbbreviatedPath": "\/images\/bg-dark.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/bg1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -111,17 +131,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/logo2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 86071,
-		"inputAbbreviatedPath": "\/images\/logo2.jpg",
-		"outputAbbreviatedPath": "\/images\/logo2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/logo2.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -129,17 +138,6 @@
 		"initialSize": 451362,
 		"inputAbbreviatedPath": "\/images\/logo2.png",
 		"outputAbbreviatedPath": "\/images\/logo2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/logo3.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 25337,
-		"inputAbbreviatedPath": "\/images\/logo3.jpg",
-		"outputAbbreviatedPath": "\/images\/logo3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -184,17 +182,6 @@
 		"initialSize": 470,
 		"inputAbbreviatedPath": "\/images\/pattern.png",
 		"outputAbbreviatedPath": "\/images\/pattern.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/Testimonial-bg.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 579594,
-		"inputAbbreviatedPath": "\/images\/Testimonial-bg.jpg",
-		"outputAbbreviatedPath": "\/images\/Testimonial-bg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
