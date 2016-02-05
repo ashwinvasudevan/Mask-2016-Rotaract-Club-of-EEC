@@ -1,3 +1,6 @@
+/*Author : Ashwin Vasudevan*/
+/*Website: ashwinvasudevan.com*/
+
 /* GENERAL */
 
 html,body {
@@ -231,7 +234,7 @@ p {
 #subscribe {
 	padding: 20px 0px;
 }
-#subscribe .form-group .form-control {
+.form-group .form-control {
 	margin-top: 20px;
 	border-radius: 0px;
 	font-family:'Open Sans Condensed',sans-serif;
@@ -258,12 +261,6 @@ p {
 	display: -ms-flexbox;
 }
 
-article img {
-	border-radius: 10px;
-  border: 3px solid #BADA55;
-
-}
-
 .bg{
 	background: url(../images/bg-dark.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -279,17 +276,85 @@ article img {
 }
 
 article img {
-	padding: 30px 0px;
+	display: block;
+	width: 165px;
+	height: 165px;
+	margin: 30px auto;
 }
 
 article #info-text {
 	margin-top: 40px;
 }
 
+/*Gallery Section*/
 
+#gallery img {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 50px;	
+}
 
+.modal-dialog{
+	margin: 100px auto;
+}
 
+/*Lightbox*/
+#lightbox .modal-content {
+    display: inline-block;
+    text-align: center;   
+}
 
+#lightbox .close {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: -15px;
+    right: -55px;
+    z-index: 1032;
+} 
+
+/*Video Section - Responsive code*/
+
+.videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Footer section*/
+
+footer{
+	padding: 40px 0;
+}
+
+#footer-links{
+	margin-top: 30px;
+}
+
+footer img {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+
+#message {
+	height: 200px;
+}
 
 
 /*Mobile CSS*/
@@ -309,6 +374,7 @@ article #info-text {
 
 	h1,h2,h3,h4,h5,h6 {
 		line-height: 25px;
+		text-align: center;	
 	}
 
 	.container-fluid>.navbar-header,.navbar-nav {
@@ -339,8 +405,11 @@ article #info-text {
 	}
 
 	.row-eq-height {
-		display: block;
+		-webkit-flex-direction: column; /* Safari */
+  		flex-direction:         column;
 	}
+
+
 	
 }
 
