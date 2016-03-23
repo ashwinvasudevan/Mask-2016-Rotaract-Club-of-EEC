@@ -160,15 +160,21 @@ p {
 	position: absolute;
 	top: 23%;
 	z-index: 2;
-	width: 309px;
+	width: 400px;
 	margin: 0 auto;
 	left:0;
 	right:0;
 }
+
 #main-logos img {
 	display:inline-block;
-	width:100px;
-	height:100px;
+	width:80px;
+	height:80px;
+}
+
+#main-logos img:nth-child(4) {
+	width:150px;
+	height: 60px;
 }
 
 /* BOOTSTRAP ARROW BG OVERRIDE */ 
@@ -210,25 +216,6 @@ p {
 	
 }
 
-.incremental-counter {
-	display: inline;
-}
-
-.incremental-counter .num {
-	background-color: #00d089;
-	border-radius: 100px;
-	display: inline-block;
-	background-position: center;
-	position: relative;
-	text-align: center;
-	top: -10px;
-	width: 45px;
-	height: 45px;
-	font-size: 30px;
-	font-weight: 700;
-	margin-right: 10px;
-}
-
 /*Subscribe Section*/
 
 #subscribe {
@@ -262,7 +249,7 @@ p {
 }
 
 .bg{
-	background: url(../images/bg-dark.jpg) no-repeat center center fixed; 
+	background: url(../images/bg-dark-min.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -395,13 +382,6 @@ footer img {
 			width: 55px;
 			height: 80px;
 			border: none;
-	}
-
-	.incremental-counter .num {
-			top: -5px;
-			width: 25px;
-			height: 25px;
-			font-size: 14px;
 	}
 
 	.row-eq-height {

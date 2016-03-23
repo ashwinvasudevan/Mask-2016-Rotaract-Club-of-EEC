@@ -64,6 +64,16 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <![endif]-->
 </head>
 <body>
+	<?php if(!empty($emailSent)): ?>
+        <div class="col-md-6 col-md-offset-3">
+            <div class="alert alert-success text-center">Sua mensagem foi enviada com sucesso.</div>
+        </div>
+    <?php else: ?>
+    <?php if(!empty($hasError)): ?>
+        <div class="col-md-5 col-md-offset-4">
+            <div class="alert alert-danger text-center">Houve um erro no envio, tente novamente mais tarde.</div>
+        </div>
+    <?php endif; ?>
 	<nav class="navbar navbar-default navbar-fixed-top">
   		<div class="container-fluid">
     	<!-- Brand and toggle get grouped for better mobile display -->
@@ -444,21 +454,61 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 			<div class="row">
 				<div class="col-md-4 col-md-offset-1">
 					<h2 class="heavy">Contact Us!</h2>
-					<form class="text-center">
-						<div class="form-group">
-					    	<input type="text" class="form-control" id="inputfirstname" placeholder="FIRST NAME">
-					 	</div>
-						<div class="form-group">
-						    <input type="text" class="form-control" id="inputlastname" placeholder="LAST NAME">
-						</div>	
-					    <div class="form-group">
-	    					<input type="email" class="form-control" id="email" placeholder="ENTER EMAIL">
-	    				</div>
-	    				<div class="form-group">
-						  	<textarea class="form-control" rows="5" id="message" placeholder="ENTER YOUR MESSAGE"></textarea>
-						</div>
-    					<button type="submit" class="btn btn-default btn-secondary">SUBMIT</button>
-					</form>
+					
+
+
+
+				<form action="<?php echo $_SERVER['REQUEST_URI']; ?>" id="contact-form" class="form-horizontal" role="form" method="post">
+            <div class="form-group">
+                <label for="name" class="col-lg-2 control-label">Nome</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="form-name" name="form-name" placeholder="Nome" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                    <input type="email" class="form-control" id="form-email" name="form-email" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="tel" class="col-lg-2 control-label">Telefone</label>
+                <div class="col-lg-10">
+                    <input type="tel" class="form-control" id="form-tel" name="form-tel" placeholder="Telefone">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="mensagem" class="col-lg-2 control-label">Mensagem</label>
+                <div class="col-lg-10">
+                    <textarea class="form-control" rows="3" id="form-mensagem" name="form-mensagem" placeholder="Mensagem" required></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-10">
+                    <button type="submit" class="btn btn-default">Enviar</button>
+                </div>
+            </div>
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				</div>
 				<div class="col-md-4 col-md-offset-1">
 					<div id="footer-links" class="text-center">
