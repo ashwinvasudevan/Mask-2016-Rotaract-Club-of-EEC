@@ -38,6 +38,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 ?>
+
 <!DOCTYPE html>
 <!-- ashwinvasudevan.com -->
 <html lang="en">
@@ -64,16 +65,21 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <![endif]-->
 </head>
 <body>
-	<?php if(!empty($emailSent)): ?>
-        <div class="col-md-6 col-md-offset-3">
-            <div class="alert alert-success text-center">Sua mensagem foi enviada com sucesso.</div>
-        </div>
+	 <?php if(!empty($emailSent)): ?>
+        	<script>
+				function myFunction() {
+				    alert("Sent");
+				}
+			</script>
     <?php else: ?>
-    <?php if(!empty($hasError)): ?>
-        <div class="col-md-5 col-md-offset-4">
-            <div class="alert alert-danger text-center">Houve um erro no envio, tente novamente mais tarde.</div>
-        </div>
-    <?php endif; ?>
+        <?php if(!empty($hasError)): ?>
+        	<script>
+				function myFunction() {
+				    alert("Could not send! Error.");
+				}
+			</script>
+        <?php endif; ?>
+
 	<nav class="navbar navbar-default navbar-fixed-top">
   		<div class="container-fluid">
     	<!-- Brand and toggle get grouped for better mobile display -->
@@ -110,7 +116,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('images/bg1-min.jpg');"></div>
+                <div class="fill" style="background-image:url('images/bg2-min.jpg');"></div>
                 <div class="carousel-caption">
                 	<div class="row">
                 		<div class="col-lg-12">
@@ -125,7 +131,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('images/bg2-min.jpg');"></div>
+                <div class="fill" style="background-image:url('images/bg1-min.jpg');"></div>
                 <div class="carousel-caption">
                 	<div class="row">
                 		<div class="col-lg-12 col-xs-12	">	
@@ -156,25 +162,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         	 <i class="fa fa-arrow-right"></i>
         </a>
     </header>
-    <section id="subscribe" class="primary-color">
-    	<div class="container-fluid">
-    		<div class="row">
-    			<div class="col-lg-3 col-lg-offset-1 col-sm-12 text-center">
-    				<h2 class="heavy"> Join us!</h2>
-    				<h3> August 2016 </h3>
-    			</div>
-    			<div class="col-lg-4 col-sm-6 col-sm-offset-2 ">
-	    			<div class="form-group">
-	    				<input type="email" class="form-control" id="email" placeholder="ENTER EMAIL">
-	    				
-	    			</div>
-	    		</div>
-	    		<div class="col-lg-2 col-sm-4  text-center">
-    					<button type="submit" class="btn btn-default btn-secondary">SUBMIT</button>
-	    		</div>
-    		</div>
-    	</div> 
-    </section>
+    
 	<section id="mission" class="secondary-color">
 		<div class="container-fluid">
 			<div class="row">
@@ -454,61 +442,37 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 			<div class="row">
 				<div class="col-md-4 col-md-offset-1">
 					<h2 class="heavy">Contact Us!</h2>
-					
-
-
-
-				<form action="<?php echo $_SERVER['REQUEST_URI']; ?>" id="contact-form" class="form-horizontal" role="form" method="post">
+					 <form action="<?php echo $_SERVER['REQUEST_URI']; ?>" id="contact-form" class="form-horizontal" role="form" method="post">
             <div class="form-group">
-                <label for="name" class="col-lg-2 control-label">Nome</label>
                 <div class="col-lg-10">
-                    <input type="text" class="form-control" id="form-name" name="form-name" placeholder="Nome" required>
+                    <input type="text" class="form-control" id="form-name" name="form-name" placeholder="Name" required>
                 </div>
             </div>
             <div class="form-group">
-                <label for="email" class="col-lg-2 control-label">Email</label>
+           
                 <div class="col-lg-10">
                     <input type="email" class="form-control" id="form-email" name="form-email" placeholder="Email" required>
                 </div>
             </div>
             <div class="form-group">
-                <label for="tel" class="col-lg-2 control-label">Telefone</label>
+            
                 <div class="col-lg-10">
-                    <input type="tel" class="form-control" id="form-tel" name="form-tel" placeholder="Telefone">
+                    <input type="tel" class="form-control" id="form-tel" name="form-tel" placeholder="Phone Number">
                 </div>
             </div>
             <div class="form-group">
-                <label for="mensagem" class="col-lg-2 control-label">Mensagem</label>
+                
                 <div class="col-lg-10">
-                    <textarea class="form-control" rows="3" id="form-mensagem" name="form-mensagem" placeholder="Mensagem" required></textarea>
+                    <textarea class="form-control" rows="3" id="form-mensagem" name="form-mensagem" placeholder="Your Message" required></textarea>
                 </div>
             </div>
             <div class="form-group">
-                <div class="col-lg-offset-2 col-lg-10">
-                    <button type="submit" class="btn btn-default">Enviar</button>
+                <div class="col-lg-offset-3 col-lg-10">
+                    <button type="submit" class="btn btn-default btn-secondary spacing">SUBMIT</button>
                 </div>
             </div>
         </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	    <?php endif; ?>
 				</div>
 				<div class="col-md-4 col-md-offset-1">
 					<div id="footer-links" class="text-center">
@@ -523,7 +487,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 			</div>
 		</div>
 	</footer>
-	
+
 
 
 
@@ -535,6 +499,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	<!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/contact-form.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Custom JS -->

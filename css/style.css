@@ -160,7 +160,7 @@ p {
 	position: absolute;
 	top: 23%;
 	z-index: 2;
-	width: 400px;
+	width: 450px;
 	margin: 0 auto;
 	left:0;
 	right:0;
@@ -214,22 +214,6 @@ p {
 .carousel-caption h1,.carousel-caption h3 {
 	text-align: center;
 	
-}
-
-/*Subscribe Section*/
-
-#subscribe {
-	padding: 20px 0px;
-}
-.form-group .form-control {
-	margin-top: 20px;
-	border-radius: 0px;
-	font-family:'Open Sans Condensed',sans-serif;
-	height: 40px;
-}
-
-#subscribe button {
-	margin-top: 20px;
 }
 
 /*The mission*/
@@ -338,10 +322,15 @@ footer img {
 	height: 50px;
 	margin: 10px;
 }
+/*Footer form*/
 
-#message {
-	height: 200px;
+.form-group .form-control {
+	margin-top: 20px;
+	border-radius: 0px;
+	font-family:'Open Sans Condensed',sans-serif;
 }
+
+
 
 
 /*Mobile CSS*/
